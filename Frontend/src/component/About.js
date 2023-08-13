@@ -1,11 +1,10 @@
-import SignIn from "./signInModal";
+
 
 
 const About=()=>{
     return(
         <>
         About
-        <SignIn/>
         </>
     )
 }

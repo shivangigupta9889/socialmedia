@@ -1,7 +1,7 @@
 
 import img from "../Assets/xx2.png"
-import SignIn from "./signInModal";
 
+import Login from "./Mode1";
 
 const JoinPage = () => {
   return (
@@ -47,7 +47,7 @@ const JoinPage = () => {
           {/* <button  className="bg-white mt-8 px-14 py-2 place-self-center border border-gray-200 rounded-full">
             Sign in
           </button> */}
-          
+          <Login/>
           
         </div>
       </div>
