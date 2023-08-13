@@ -4,10 +4,13 @@ import Header from "./src/component/Header";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import About from "./src/component/About";
 import Contact from "./src/component/Contact";
-
+import JoinPage from "./src/component/JoinPage";
+import Modal from "./src/component/signInModal";
 const AppLayout=()=>{
     return (<div>
-        <Header/>
+        {/* <Header/> */}
+        <JoinPage/>
+
         </div>)
 };
 const appRouter = createBrowserRouter([

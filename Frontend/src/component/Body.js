@@ -3,6 +3,7 @@ const Body=()=>{
         <>
         Body
         </>
+        
     )
 }
 export default Body;
