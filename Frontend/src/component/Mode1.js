@@ -14,13 +14,12 @@ export default function Login() {
       {showModal ? (
         <>
           <div className="w-9/12">
-            <div className="justify-center items-center flex  overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
-              <div className="relative my-6 mx-auto w-5/12 rounded-full">
+            <div className="justify-center items-center flex h-5/8  overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
+              <div className="absolute my-6 mx-auto w-5/12  rounded-full">
                 {/*content*/}
-                <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
+                <div className="border-0 rounded-lg shadow-lg   relative flex flex-col w-full bg-white outline-none focus:outline-none">
                   {/*header*/}
-                  <div className="flex items-start justify-between p-5 border-b border-solid border-slate-200 rounded-t">
-                    <h3 className="text-3xl font-semibold">Modal Title</h3>
+                  {/* <div className="flex items-start justify-between p-5 border-b border-solid border-slate-200 rounded-t">
                     <button
                       className="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
                       onClick={() => setShowModal(false)}
@@ -29,17 +28,26 @@ export default function Login() {
                         ×
                       </span>
                     </button>
-                  </div>
+                  </div> */}
                   {/*body*/}
+                  <div className="flex items-center justify-start p-6 border-t border-solid border-slate-200 rounded-b">
+                    <button
+                      className="text-black-500 background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                      type="button"
+                      onClick={() => setShowModal(false)}
+                    >
+                      X
+                    </button>
+                  </div>
 
-                  <div className="relative flex flex-col justify-center min-h-screen overflow-hidden">
+                  <div className="relative flex flex-col justify-center  overflow-hidden ">
                     <div className="w-full p-6 m-auto bg-white rounded-md shadow-xl lg:max-w-xl">
                       <h1 className="text-3xl font-semibold text-center text-black-700 text-bold uppercase">
                         Sign in to X
                       </h1>
                       <form className="mt-6">
                         <div className="mb-2"></div>
-                        <button className="align-center flex items-center  bg-white border border-gray-300 rounded-full shadow-md max-w-xs px-6 py-2 text-sm font-medium text-gray-800 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
+                        <button className="align-center ml-36 flex items-center  bg-white border border-gray-300 rounded-full shadow-md max-w-xs px-6 py-2 text-sm font-medium text-gray-800 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
                           <svg
                             className="h-6 w-6 mr-2"
                             xmlns="http://www.w3.org/2000/svg"
@@ -88,8 +96,7 @@ export default function Login() {
                           </svg>
                           <span>Continue with Google</span>
                         </button>
-
-                        <button className="flex items-center bg-white border border-gray-300 rounded-full shadow-md max-w-xs px-6 py-2 text-sm font-medium text-gray-800 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
+                        <button className="flex items-center ml-36 mt-4 bg-white border border-gray-300 rounded-full shadow-md max-w-xs px-6 py-2 text-sm font-medium text-gray-800 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
                           <svg
                             className="h-6 w-6 mr-2"
                             xmlns="http://www.w3.org/2000/svg"
@@ -123,19 +130,19 @@ export default function Login() {
                           </svg>
                           <span>Continue with Apple</span>
                         </button>
-                        <div className="relative flex items-center justify-center w-full mt-6 border border-t">
+                        <div className="relative flex items-center justify-center w-full mt-6 mb-8 border border-t">
                           <div className="absolute px-5 bg-white">Or</div>
                         </div>
                         <input
                           type="email"
-                          className="block w-full px-4 py-2 mt-2  bg-white border rounded-md focus:border-purple-400 focus:ring-purple-300 focus:outline-none focus:ring focus:ring-opacity-40"
+                          className="block w-full px-4 py-2 mt-6  bg-white border rounded-md focus:border-purple-400 focus:ring-purple-300 focus:outline-none focus:ring focus:ring-opacity-40"
                         />
                         <input
                           type="email"
                           className="block w-full px-4 py-2 mt-2  bg-white border rounded-md focus:border-purple-400 focus:ring-purple-300 focus:outline-none focus:ring focus:ring-opacity-40"
                         />
                         <div className="mt-6">
-                          <button className="w-full px-4 py-2 tracking-wide text-white transition-colors duration-200 font-bold transform bg-black rounded-full hover:bg-purple-600 focus:outline-none focus:bg-purple-600">
+                        <button className="w-full px-4 py-2 tracking-wide text-white transition-colors duration-200 font-bold transform bg-gray-500 rounded-full hover:bg-gray-400 focus:outline-none focus:bg-gray-300">
                             Next
                           </button>
                         </div>
@@ -153,22 +160,7 @@ export default function Login() {
                       </p>
                     </div>
                   </div>
-                  <div className="flex items-center justify-end p-6 border-t border-solid border-slate-200 rounded-b">
-                    <button
-                      className="text-red-500 background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
-                      type="button"
-                      onClick={() => setShowModal(false)}
-                    >
-                      X
-                    </button>
-                    <button
-                      className="bg-emerald-500 text-white active:bg-emerald-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
-                      type="button"
-                      onClick={() => setShowModal(false)}
-                    >
-                      Save Changes
-                    </button>
-                  </div>
+
                 </div>
               </div>
             </div>

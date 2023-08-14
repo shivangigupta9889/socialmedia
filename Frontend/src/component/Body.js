@@ -1,7 +1,9 @@
 const Body=()=>{
     return(
         <>
-        Body
+      <div className="h-6/9 bg-red">
+
+      </div>
         </>
         
     )
