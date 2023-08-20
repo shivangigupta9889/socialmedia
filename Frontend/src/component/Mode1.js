@@ -41,13 +41,13 @@ export default function Login() {
                   </div>
 
                   <div className="relative flex flex-col justify-center  overflow-hidden ">
-                    <div className="w-full p-6 m-auto bg-white rounded-md shadow-xl lg:max-w-xl">
+                    <div className=" m-auto bg-white rounded-md shadow-xl ">
                       <h1 className="text-3xl font-semibold text-center text-black-700 text-bold uppercase">
                         Sign in to X
                       </h1>
                       <form className="mt-6">
                         <div className="mb-2"></div>
-                        <button className="align-center ml-36 flex items-center  bg-white border border-gray-300 rounded-full shadow-md max-w-xs px-6 py-2 text-sm font-medium text-gray-800 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
+                        <button className="align-center ml-20 flex items-center  bg-white border border-gray-300 rounded-full shadow-md max-w-xs px-6 py-2 text-sm font-medium text-gray-800 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
                           <svg
                             className="h-6 w-6 mr-2"
                             xmlns="http://www.w3.org/2000/svg"
@@ -96,7 +96,7 @@ export default function Login() {
                           </svg>
                           <span>Continue with Google</span>
                         </button>
-                        <button className="flex items-center ml-36 mt-4 bg-white border border-gray-300 rounded-full shadow-md max-w-xs px-6 py-2 text-sm font-medium text-gray-800 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
+                        <button className="flex items-center ml-20  mt-4 bg-white border border-gray-300 rounded-full shadow-md max-w-xs px-6 py-2 text-sm font-medium text-gray-800 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
                           <svg
                             className="h-6 w-6 mr-2"
                             xmlns="http://www.w3.org/2000/svg"

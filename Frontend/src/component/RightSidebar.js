@@ -1,13 +1,28 @@
 import React from 'react'
+import SearchComponent from './SearchBar'
+import SubscribeCard from './SubscribeCard'
+import HappeningCard from './HappeningCard'
 
 
 const RightSidebar = () => {
   return (
-      <aside className='w-64' aria-label='Sidebar'>
+      <aside className='w-full' aria-label='Sidebar'>
           <div className='py-4 px-3 bg-gray-50 rounded dark:bg-gray-800'>
+          <SearchComponent/>
+          <SubscribeCard/>
+          <HappeningCard/>
+          
+
+
+
+
               
-              <ul className='space-y-2'>
+              {/* <ul className='space-y-2'>
                   <li>
+
+
+
+                    <SearchComponent/>
                       <a
                           href='#'
                           className='flex flex-items p-2 text-base font-normal rounded-lg dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700'
@@ -45,7 +60,7 @@ const RightSidebar = () => {
                       </a>
                   </li>
                   
-              </ul>
+              </ul> */}
           </div>
       </aside>
   )
