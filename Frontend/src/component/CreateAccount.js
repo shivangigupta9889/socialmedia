@@ -4,7 +4,7 @@ const CreateAccount = () => {
     return (
         <>
 
-            <button className="bg-blue-500 text-white place-self-center font-bold mt-2 px-14 py-2 border border-gray-200 rounded-full" type="button"
+            <button className="bg-blue-500 text-white w-1/2 place-self-center font-bold mt-2 px-14 py-2 border border-gray-200 rounded-full" type="button"
                 onClick={() => setShowModal(true)}
             >
                 Create Account
@@ -44,26 +44,27 @@ const CreateAccount = () => {
                                             <h1 className="text-5xl font-semibold text-center text-black-700 text-bold ">
                                                 Create your account
                                             </h1>
-                                            <form className="mt-6">
+                                            <form className="mt-6 ">
                                                 <div className="mt-10">
                                                 <input
                                                     type="text" placeholder="Name" name="name" id="name" 
-                                                    className="block w-full px-4 py-2 my-6 text-xl bg-white border rounded-md focus:border-blue-400 focus:ring-blue-300 focus:outline-none focus:ring focus:ring-opacity-40"
+                                                    className="block w-full hover:scale-105 hover:shadow-2xl px-4 py-2 my-6 text-xl bg-white border rounded-md focus:border-blue-400 focus:ring-blue-300 focus:outline-none focus:ring focus:ring-opacity-40"
                                                 />
                                                 <input
                                                     type="text|email" placeholder="Mobile No/email" name="text|email" 
-                                                    className="block w-full px-4 py-2 my-6 bg-white text-xl border rounded-md focus:border-blue-400 focus:ring-blue-300 focus:outline-none focus:ring focus:ring-opacity-40"
+                                                    className="block hover:scale-105 hover:shadow-2xl w-full px-4 py-2 my-6 bg-white text-xl border rounded-md focus:border-blue-400 focus:ring-blue-300 focus:outline-none focus:ring focus:ring-opacity-40"
                                                 />
                                                 
                                                 <input
                                                 
                                                     type="text" placeholder="UserName" name="username" id="username"
-                                                    className="block w-full px-4 py-2 my-6 text-xl bg-white border rounded-md focus:border-blue-400 focus:ring-blue-300 focus:outline-none focus:ring focus:ring-opacity-40"
+                                                    className="block w-full hover:scale-105 hover:shadow-2xl px-4 py-2 my-6 text-xl bg-white border rounded-md focus:border-blue-400 focus:ring-blue-300 focus:outline-none focus:ring focus:ring-opacity-40"
                                                 />
                                                 <input
                                                     type="password" id="password" name="password"placeholder="password"
-                                                    className="block w-full px-4 py-2 mt-6 bg-white text-xl border rounded-md focus:border-blue-400 focus:ring-blue-300 focus:outline-none focus:ring focus:ring-opacity-40"
+                                                    className="block w-full px-4 hover:scale-105 hover:shadow-2xl py-2 mt-6 bg-white text-xl border rounded-md focus:border-blue-400 focus:ring-blue-300 focus:outline-none focus:ring focus:ring-opacity-40"
                                                 />
+                                                <input type="image" id="image" alt="Login" ></input>
                                                 </div>
                                                 <h1 className="font-bold">Date of Birth</h1>
                                                 <p className="text-s">This will not be shown publicly. Confirm your own age, even if this account is for a business, a pet, or something else.</p>
