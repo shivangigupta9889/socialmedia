@@ -107,6 +107,7 @@
     "timsort": "^0.3.0",
     "to-regex-range": "^5.0.1",
     "tslib": "^2.6.1",
+    "tw-elements-react": "^1.0.0-alpha1",
     "type-fest": "^0.20.2",
     "update-browserslist-db": "^1.0.11",
     "utility-types": "^3.10.0",
